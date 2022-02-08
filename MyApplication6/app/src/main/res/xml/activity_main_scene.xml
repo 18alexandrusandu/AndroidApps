@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+       <KeyFrameSet>
+       </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_width="134dp"
+            android:layout_height="91dp"
+            motion:layout_editor_absoluteX="148dp"
+            android:id="@+id/button"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="480dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="160dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="148dp"
+            android:layout_marginLeft="148dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="129dp"
+            android:layout_marginRight="129dp" />
+        <Constraint
+            android:layout_width="103dp"
+            android:layout_height="39dp"
+            android:id="@+id/textView"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="302dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="390dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="179dp"
+            android:layout_marginLeft="179dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="129dp"
+            android:layout_marginRight="129dp"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintVertical_bias="0.0" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+    </ConstraintSet>
+</MotionScene>
